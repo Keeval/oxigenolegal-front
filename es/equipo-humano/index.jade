@@ -1,0 +1,39 @@
+extends ../../html/layouts/layout_default
+
+block navigation
+	include ../../html/structure/navigation/navigation_humanteam
+
+block modal__inner
+	div#modal__inner
+
+		a(href="/es/")#modal__back
+			span Volver
+
+		div#modal__navigation
+		
+			ul
+				li
+					a(href="#rafael-perez-escariz") Dr. Rafael Pérez-Escariz
+				li
+					a(href="#juhani-lipasti") Dr. Juhani Lipasti
+				li
+					a(href="#estefania-laguna") Dra. Estefanía Laguna
+				li
+					a(href="#maria-naranjo") Dra. María Naranjo Ibañez
+				li
+					a(href="#maria-rebolloso") Dra. María Rebolloso
+				li
+					a(href="#natalia-garcia-moneo") Dra. Natalia García Moneo
+
+		div#modal__content
+			div#modal__content__inner
+
+				div.modal__content__heading
+		
+					H1 Equipo humano
+					div.modal__heading__intro
+						p No basta con una gran experiencia médica para ser un buen profesional. El factor humano es fundamental.
+
+				include ../../html/modules/module-team/module-team
+
+				include ../../html/modules/module-quotes/module-quotes-team

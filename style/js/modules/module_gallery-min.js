@@ -1,0 +1,1 @@
+define(["jquery",window.baseStyleJs+"/libraries/jquery.fancybox/source/jquery.fancybox.pack.js"],function(){return{init:function(){var i=window.innerWidth?window.innerWidth:$(window).width(),n=40;i<=600?n=20:i<=1300&&(n=30),$(".module--gallery a").fancybox({padding:0,margin:n,width:"100%",height:"100%",loop:!1,helpers:{title:{type:"float"}}})}}});

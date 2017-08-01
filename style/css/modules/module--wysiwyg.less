@@ -1,0 +1,63 @@
+//----------------------------------------//
+//                                        //
+//  Stylesheet: Module--Wysiwyg           //
+//                                        //
+//----------------------------------------//
+
+
+.module.module--wysiwyg {
+
+	width: 100%;
+	max-width: 50em;
+	padding: 0 40px 80px 0;
+	line-height: 1.7em;
+	
+	img, .wp-caption {
+		.transition(~'opacity 0.5s linear');
+		opacity: 0;
+		&.appear--on {
+			opacity: 1;
+		}
+		.usingTouch & {
+			opacity: 1;
+		}
+	}
+
+}
+
+
+//------------------------------------------------------------
+//------------------------------------------------------------
+
+
+@media (max-width: 1300px) {
+
+	.module.module--wysiwyg {
+
+		padding: 0 30px 60px 0;
+		
+	}
+
+}
+
+
+//------------------------------------------------------------
+//------------------------------------------------------------
+
+
+@media (max-width: 600px) {
+
+	.module.module--wysiwyg {
+
+		padding: 0 20px 35px 20px;
+		
+		* + h2, * + h3, * + h4, * + h5, * + h6 {
+			margin-top: 1.8em;
+		}
+		hr {
+			margin: 50px 0;		
+		}
+
+	}
+
+}

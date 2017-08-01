@@ -1,0 +1,173 @@
+//----------------------------------------//
+//                                        //
+//  Mixins                                //
+//                                        //
+//----------------------------------------//
+
+
+//Clearfix
+
+.clearfix() {
+	&:after {
+		content: "";
+		display: table;
+		clear: both;
+	}
+}
+
+
+// CSS3 properties
+
+.font-variant-ligatures( @string ) {
+	-webkit-font-variant-ligatures: @string;
+	-moz-font-variant-ligatures: @string;
+	-o-font-variant-ligatures: @string;
+	font-variant-ligatures: @string;
+}
+
+.transition(...) {
+    @props: ~`"@{arguments}".replace(/[\[\]]/g, '')`;
+    -webkit-transition: @props;
+    -moz-transition: @props;
+    -o-transition: @props;
+    transition: @props;
+}
+
+.transition-delay(...) {
+    @props: ~`"@{arguments}".replace(/[\[\]]/g, '')`;
+    -webkit-transition-delay: @props;
+    -moz-transition-delay: @props;
+    -o-transition-delay: @props;
+    transition-delay: @props;
+}
+
+.transform(...) {
+    @props: ~`"@{arguments}".replace(/[\[\]]/g, '')`;
+    -webkit-transform: @props;
+    -moz-transform: @props;
+    -o-transform: @props;
+    transform: @props;
+}
+
+.transform-origin(...) {
+    @props: ~`"@{arguments}".replace(/[\[\]]/g, '')`;
+    -webkit-transform-origin: @props;
+    -moz-transform-origin: @props;
+    -o-transform-origin: @props;
+    transform-origin: @props;
+}
+
+.transform-style(...) {
+    @props: ~`"@{arguments}".replace(/[\[\]]/g, '')`;
+    -webkit-transform-style: @props;
+    -moz-transform-style: @props;
+    -o-transform-style: @props;
+    transform-style: @props;
+}
+
+.perspective(...) {
+    @props: ~`"@{arguments}".replace(/[\[\]]/g, '')`;
+    -webkit-perspective: @props;
+    -moz-perspective: @props;
+    -o-perspective: @props;
+    perspective: @props;
+}
+
+.perspective-origin(...) {
+    @props: ~`"@{arguments}".replace(/[\[\]]/g, '')`;
+    -webkit-perspective-origin: @props;
+    -moz-perspective-origin: @props;
+    -o-perspective-origin: @props;
+    perspective-origin: @props;
+}
+
+.animation(...) {
+    @props: ~`"@{arguments}".replace(/[\[\]]/g, '')`;
+    -webkit-animation: @props;
+    -moz-animation: @props;
+    -ms-animation: @props;
+    -o-animation: @props;
+    animation: @props;
+}
+
+.column-count( @string ) {
+	-webkit-column-count: @string;
+	-moz-column-count: @string;
+	column-count: @string;
+}
+
+.column-gap( @string ) {
+	-webkit-column-gap: @string;
+	-moz-column-gap: @string;
+	column-gap: @string;
+}
+
+.column-rule-style( @string ) {
+	-webkit-column-rule-style: @string;
+	-moz-column-rule-style: @string;
+	column-rule-style: @string;
+}
+
+.column-rule-width( @string ) {
+	-webkit-column-rule-width: @string;
+	-moz-column-rule-width: @string;
+	column-rule-width: @string;
+}
+
+.column-rule-color( @string ) {
+	-webkit-column-rule-color: @string;
+	-moz-column-rule-color: @string;
+	column-rule-color: @string;
+}
+
+.column-rule( @string ) {
+	-webkit-column-rule: @string;
+	-moz-column-rule: @string;
+	column-rule: @string;
+}
+
+.column-span( @string ) {
+	-webkit-column-span: @string;
+	-moz-column-span: @string;
+	column-span: @string;
+}
+
+.column-width( @string ) {
+	-webkit-column-width: @string;
+	-moz-column-width: @string;
+	column-width: @string;
+}
+
+.column-break-inside( @string ) {
+	-webkit-column-break-inside: @string;
+	page-break-inside: @string;
+	break-inside: @string;
+}
+
+.box-shadow( ... ) {
+    @props: ~`"@{arguments}".replace(/[\[\]]/g, '')`;
+    -webkit-box-shadow: @props;
+    -moz-box-shadow: @props;
+    -o-box-shadow: @props;
+    box-shadow: @props;
+}
+
+.border-radius ( ... ) {
+    @props: ~`"@{arguments}".replace(/[\[\]]/g, '')`;
+    -webkit-border-radius: @props;
+    -moz-border-radius: @props;
+    -o-border-radius: @props;
+    border-radius: @props;
+}
+
+.appearance( @string ) {
+	-webkit-appearance: @string;
+	-moz-appearance: @string;
+	appearance: @string;
+}
+
+.font-smoothing( @string ) {
+	-webkit-font-smoothing: @string;
+	-moz-font-smoothing: @string;
+	appearance: @string;
+}

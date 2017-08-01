@@ -1,0 +1,238 @@
+//----------------------------------------//
+//                                        //
+//  Stylesheet: Module--Gallery           //
+//                                        //
+//----------------------------------------//
+
+
+.module.module--gallery {
+	
+	.module--gallery__vr {
+		position: relative;
+		height: 0;
+		padding: 40% 0 0 0;
+		a {
+			position: absolute;
+			display: block;
+			top: 0;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			overflow: hidden;
+			.module--gallery__vr__image {
+				position: absolute;
+				z-index: 100;
+				top: 0;
+				left: 0;
+				right: 0;
+				bottom: 0;
+				background-size: cover;
+				background-position: center center;
+				.transition(~'transform 1.5s ease-in-out');
+			}
+			.module--gallery__vr__text {
+				position: absolute;
+				z-index: 300;
+				top: 70%;
+				left: 0;
+				right: 0;
+				text-align: center;
+				.transform(~'translateY(-50%)');
+				padding: 0 20px;
+				color: #ffffff;
+				opacity: 0;
+				.transition(~'opacity 0.3s linear');				
+			}
+			&:after {
+				content: "";
+				position: absolute;
+				z-index: 200;
+				top: 0;
+				bottom: 0;
+				left: 0;
+				right: 0;
+				background: rgba(0,0,0,0.6);
+				opacity: 0.5;
+				.transition(~'opacity 0.3s linear');
+			}
+			&:before {
+				.icon();
+				content: @icon-3d;
+				color: #ffffff;
+				font-size: 5vh;
+				display: block;
+				position: absolute;
+				z-index: 400;
+				top: 50%;
+				left: 50%;
+ 				.transform(~'translateX(-50%) translateY(-50%)');
+			}							
+			.usingMouse &:hover {
+				.module--gallery__vr__image {
+					.transform(~'scale(1.05)');
+				}
+				.module--gallery__vr__text,
+				&:after {
+					opacity: 1;
+				}
+			}
+			.usingTouch & {
+				.module--gallery__vr__text,
+				&:after {
+					opacity: 1;
+				}
+			}			
+		}
+	}
+	
+	.module--gallery__photos {
+		position: relative;
+		height: 0;
+		padding: 40% 0 0 0;
+		ul {
+			list-style-type: none;
+			padding: 0;
+			margin: 0;
+			> li {
+				list-style-type: none;
+				padding: 0;
+				margin: 0;
+				display: none;
+				overflow: hidden;
+				position: absolute;
+				> a {
+					display: block;
+					position: absolute;
+					top: 0;
+					bottom: 0;
+					left: 0;
+					right: 0;
+					> img {
+						width: 100%;
+						height: 100%;
+						display: block;
+						object-fit: cover;
+						.transition(~'transform 1.5s ease-in-out');
+					}
+					&:after {
+						content: "";
+						position: absolute;
+						z-index: 200;
+						top: 0;
+						bottom: 0;
+						left: 0;
+						right: 0;
+						background: rgba(0,0,0,0.1);
+						opacity: 0;
+						.transition(~'opacity 0.3s linear');
+					}					
+					.usingMouse &:hover {
+						> img {
+							.transform(~'scale(1.05)');
+						}
+						&:after {
+							opacity: 1;
+						}
+					}						
+				}
+				&:nth-child(1) {
+					display: block;
+					left: 0;
+					top: 0;
+					width: 40%;
+					height: 100%;
+				}
+				&:nth-child(2) {
+					display: block;
+					left: 40%;
+					top: 0;
+					width: 40%;
+					height: 50%;
+				}
+				&:nth-child(3) {
+					display: block;
+					left: 80%;
+					top: 0;
+					width: 20%;
+					height: 50%;
+				}
+				&:nth-child(4) {
+					display: block;
+					left: 40%;
+					top: 50%;
+					width: 20%;
+					height: 50%;
+				}
+				&:nth-child(5) {
+					display: block;
+					left: 60%;
+					top: 50%;
+					width: 40%;
+					height: 50%;
+				}				
+			}
+		}
+	}
+
+}
+
+
+//------------------------------------------------------------
+//------------------------------------------------------------
+
+
+@media (max-width: 600px) {
+
+	.module.module--gallery {
+	
+		.module--gallery__vr {
+			padding: 50% 0 0 0;
+		}
+
+		.module--gallery__photos {
+			padding: 100% 0 0 0;
+			ul {
+				> li {
+					&:nth-child(1) {
+						display: block;
+						left: 0;
+						top: 0;
+						width: 100%;
+						height: 34%;
+					}
+					&:nth-child(2) {
+						display: block;
+						left: 0;
+						top: 34%;
+						width: 66%;
+						height: 33%;
+					}
+					&:nth-child(3) {
+						display: block;
+						left: 66%;
+						top: 34%;
+						width: 34%;
+						height: 33%;
+					}
+					&:nth-child(4) {
+						display: block;
+						left: 0;
+						top: 67%;
+						width: 34%;
+						height: 33%;
+					}
+					&:nth-child(5) {
+						display: block;
+						left: 34%;
+						top: 67%;
+						width: 66%;
+						height: 33%;
+					}
+				}
+			}
+			
+		}
+	
+	}
+
+}

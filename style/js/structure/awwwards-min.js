@@ -1,0 +1,1 @@
+define(["jquery"],function(){return{init:function(){$(window).on("resize",function(){$("#awwwards").attr("style","").css({right:window.getScrollbarWidth})}),$(window).trigger("resize")}}});

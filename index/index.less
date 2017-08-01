@@ -1,0 +1,350 @@
+// Indice de plantillas para entornos Front-end
+// Estilos generales
+// Muskae
+
+@import (less) "normalize.css";
+@import "mixins";
+
+@colorText: #322F2B;
+
+body {
+	padding: 0;
+	margin: 0;
+	font-family: "Roboto", sans-serif;
+	font-weight: 400;
+	font-size: 100%;  // 16/16
+	color: @colorText;
+	background: #ebeced;
+	@media (max-width: 600px) {
+		font-size: 0.875em;  // 14/16;
+	}
+}
+
+#header {
+	background: #ffffff;
+	> .inner {
+		max-width: 1200px;
+		padding: 20px 40px 15px 40px;
+		margin: 0 auto;
+		.clearfix();
+		@media (max-width: 800px) {
+			padding-left: 30px;
+			padding-right: 30px;
+		}
+		@media (max-width: 600px) {
+			padding-left: 20px;
+			padding-right: 20px;
+		}
+	}
+	.header_logo {
+		display: block;
+		width: 150px;
+		height: 33px;
+		padding: 0;
+		margin: 27px 0 0 0;
+		float: right;
+		span {
+			display: none;
+		}
+		background-image: url(lgo-muskae.png);
+		background-size: 150px 33px;
+		background-repeat: no-repeat;
+		@media (max-width: 600px) {
+			width: 25px;
+			height: 33px;
+			margin-top: 5px;
+			background-image: url(lgo-muskae-02.png);
+			background-size: 25px 33px;
+		}
+	}
+	.header_title {
+		float: left;
+		max-width: 60%;
+		padding: 0;
+		margin: 0;
+		font-size: 1.125em;  // 18/16
+		p {
+			padding: 0;
+			margin: 0 0 5px 0;
+		}
+		.header_title_project {
+			font-weight: 300;
+		}
+		.header_title_client {
+			font-weight: 600;
+		}
+		.header_title_code {
+			font-weight: 300;
+		}
+	}
+}
+
+#content {
+	> .inner {
+		max-width: 1200px;
+		padding: 0 40px 70px 40px;
+		margin: 0 auto;
+		.clearfix();
+		@media (max-width: 800px) {
+			padding-left: 30px;
+			padding-right: 30px;
+		}
+		@media (max-width: 600px) {
+			padding-left: 20px;
+			padding-right: 20px;
+			padding-bottom: 40px;
+		}
+	}
+	section {
+		margin-top: 70px;
+		@media (max-width: 600px) {
+			margin-top: 40px;
+		}
+	}
+	h2 {
+		padding: 0;
+		margin: 0;
+		font-size: 1.125em;  // 18/16
+	}
+	ul.templateList{
+		list-style-type: none;
+		padding: 0;
+		margin: 40px 0 0 0;
+		@media (max-width: 600px) {
+			margin-top: 20px;
+		}
+		li {
+			position: relative;
+			list-style-type: none;
+			padding: 0;
+			margin: 0 0 1px 0;
+			a {
+				display: block;
+				color: @colorText;
+				text-decoration: none;
+				background: #ffffff;
+				padding: 25px 280px 25px 20px;
+				.transition( ~'background-color 0.2s linear' );
+				&:hover {
+					background: #f8f8f8;
+				}
+				@media (max-width: 800px) {
+					padding-top: 20px;
+					padding-bottom: 20px;
+				}
+				@media (max-width: 600px) {
+					padding: 10px 120px 10px 10px;
+				}
+			}
+			ul.templateList_status {
+				position: absolute;
+				bottom: 12px;
+				right: 12px;
+				list-style-type: none;
+				padding: 0;
+				margin: 0;
+				@media (max-width: 600px) {
+					bottom: 7px;
+					right: 7px;
+				}
+				li {
+					list-style-type: none;
+					display: inline-block;
+					width: 45px;
+					height: 45px;
+					padding: 13px 0;
+					margin: 0 0 0 10px;
+					.border-radius( ~'50%' );
+					background: #f0f0f0;
+					font-size: 0.875em;  // 14/16
+					text-align: center;
+					&.yellow {
+						color: #ffffff;
+						background: #FFDD59;
+					}
+					&.green {
+						color: #ffffff;
+						background: #71DC7F;
+					}
+					&.red {
+						color: #ffffff;
+						background: #f77272;
+					}
+					@media (max-width: 800px) {
+						width: 36px;
+						height: 36px;
+						padding: 8px 0;
+					}
+					@media (max-width: 600px) {
+						width: 25px;
+						height: 25px;
+						padding: 5px 0;
+						margin: 0;
+					}
+				}
+			}
+			
+		}
+	}
+	hr {
+		border-width: 1px 0 0 0;
+		border-top-color: #cccccc;
+		border-style: solid;
+		margin: 70px 0;
+		@media (max-width: 600px) {
+			margin: 40px 0;
+		}
+	}
+}
+
+#footer {
+	> .inner {
+		max-width: 1200px;
+		padding: 0 40px 0 40px;
+		margin: 0 auto;
+		.clearfix();
+		@media (max-width: 800px) {
+			padding-left: 30px;
+			padding-right: 30px;
+		}
+		@media (max-width: 600px) {
+			padding-left: 20px;
+			padding-right: 20px;
+		}
+	}
+	hr {
+		border-width: 1px 0 0 0;
+		border-top-color: #cccccc;
+		border-style: solid;
+		margin: 0 0 70px 0;
+		@media (max-width: 600px) {
+			margin-bottom: 40px;
+		}
+	}
+	.footer_legend {
+		background: #ffffff;
+		display: table;
+		width: 100%;
+		vertical-align: top;
+		@media (max-width: 600px) {
+			display: block;
+			width: auto;
+		}
+		> .inner {
+			display: table-row;
+			vertical-align: top;
+			@media (max-width: 600px) {
+				display: block;
+				width: auto;
+			}
+		}
+		.footer_legend_title {
+			display: table-cell;
+			vertical-align: top;
+			width: 33.33%;
+			padding: 35px 40px;
+			margin: 0;
+			font-size: 1.125em;  // 18/16
+			@media (max-width: 600px) {
+				display: block;
+				width: auto;
+				padding: 20px;
+			}
+		}
+		ul.footer_legend_colors {
+			display: table-cell;
+			vertical-align: top;
+			width: 33.33%;
+			min-width: 200px;
+			list-style-type: none;
+			padding: 35px 0 20px 0;
+			margin: 0;
+			font-size: 0.9375em;  // 15/16;
+			font-weight: 300;
+			@media (max-width: 600px) {
+				display: block;
+				width: auto;
+				padding: 20px 20px 5px 20px;
+			}
+			li {
+				display: block;
+				list-style-type: none;
+				padding: 0;
+				margin: 0 0 15px 0;
+				&:before {
+					content: "";
+					display: inline-block;
+					vertical-align: middle;
+					width: 25px;
+					height: 25px;
+					.border-radius( ~'50%' );
+					background: #f0f0f0;
+					margin-right: 25px;
+					position: relative;
+					top: -2px;
+					@media (max-width: 600px) {
+						width: 15px;
+						height: 15px;
+						margin-right: 15px;
+					}
+				}
+				&.yellow:before {
+					background: #FFDD59;
+				}
+				&.green:before {
+					background: #71DC7F;
+				}
+				&.red:before {
+					background: #f77272;
+				}
+			}
+		}
+		ul.footer_legend_areas {
+			display: table-cell;
+			vertical-align: top;
+			width: 33.33%;
+			min-width: 280px;
+			list-style-type: none;
+			padding: 35px 40px 20px 0;
+			margin: 0;
+			font-size: 0.9375em;  // 15/16;
+			font-weight: 300;
+			@media (max-width: 600px) {
+				display: block;
+				width: auto;
+				padding: 20px 20px 5px 20px;
+			}
+			li {
+				list-style-type: none;
+				min-height: 25px;
+				padding: 0;
+				margin: 0 0 15px 0;
+				span {
+					font-weight: 700;
+					margin-right: 25px;
+					@media (max-width: 600px) {
+						margin-right: 15px;
+					}
+				}
+			}
+		}
+	}
+	&:after {
+		content: "";
+		display: block;
+		width: 50px;
+		height: 66px;
+		background-image: url(lgo-muskae-02.png);
+		background-size: 50px 66px;
+		background-position: 0 0;
+		background-repeat: no-repeat;
+		margin: 70px auto;
+		.opacity( ~'0.2' );
+		@media (max-width: 600px) {
+			width: 30px;
+			height: 40px;
+			background-size: 30px 40px;
+			margin: 40px auto;
+		}
+	}
+}

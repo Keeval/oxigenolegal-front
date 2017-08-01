@@ -1,0 +1,28 @@
+extends ../../html/layouts/layout_default
+
+block navigation
+	include ../../html/structure/navigation/navigation_contact
+
+block modal
+	div#modal.modal--contact
+		div#modal__inner
+
+			a(href="/es/")#modal__back
+				span Volver
+
+			div#modal__content
+				div#modal__content__inner
+
+					div.modal__content__heading
+		
+						H1 Tu mensaje ha sido enviado con éxito
+						div.modal__heading__intro
+							p En breve nos pondremos en contacto contigo. Si tienes algún problema o duda puedes contactar con nosotros a través de los siguientes teléfonos:
+
+				include ../../html/modules/module-address/module-address-madrid-contacto
+				include ../../html/modules/module-address/module-address-el-alamo-contacto
+
+		div#modal__overlay
+		div#modal__loading
+			div.spinning
+

@@ -1,0 +1,35 @@
+div.module.module--wysiwyg
+	
+	.wpcf7
+		
+		form.form(novalidate)
+
+			p.form-row
+				label(for="contact_firstname")
+					span.form-control-label Nombre *
+					input(id="contact_firstname" name="contact_firstname" type="text" required="required")
+			p.form-row
+				label(for="contact_surname")
+					span.form-control-label Apellidos *
+					input(id="contact_surname" name="contact_surname" type="text" required="required")
+			p.form-row
+				label(for="contact_email")
+					span.form-control-label Email
+					input(id="contact_email" name="contact_email" type="email")
+			p.form-row
+				label(for="contact_phone").form_controlSize2
+					span.form-control-label Teléfono *
+					input(id="contact_phone" name="contact_phone" type="text" required="required")
+			p.form-row
+				label(for="contact_message")
+					span.form-control-label Mensaje
+					textarea(id="contact_observations" name="contact_message")
+			p.form-row
+				label(for="contact_acceptance")
+					input(id="contact_acceptance" name="contact_acceptance" type="checkbox")
+					span.form-control-label He leido y acepto los términos legales.
+			p Consulta aquí los #[a(href="/es/terminos-legales/") términos legales y la política de privacidad y protección de datos].
+			div.form-row-buttons
+				div.wpcf7-form-control-wrap
+					div.g-recaptcha(data-sitekey="6Lc9cxUUAAAAAI0CSvMOfEhDzYBkjQp49mXZlpoB")
+				input(type="submit" value="Enviar").button.wpcf7-form-control

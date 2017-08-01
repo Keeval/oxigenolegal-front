@@ -1,0 +1,63 @@
+//----------------------------------------//
+//                                        //
+//  General stylesheet                    //
+//                                        //
+//----------------------------------------//
+
+
+// Constants
+
+
+@text_normal_color: #7a7d7d;
+@text_dark_color: #4d4e4e;
+@text_active_color: #242221;
+@text_link_color: #40C2D8;
+@text_hover_color: #2b8291;
+@text_selection_color: @text_hover_color;
+@text_selection_background_color: fadeout(@text_link_color, 50%);
+
+@navigation_width: 240px;
+
+
+// Common styles
+
+
+@import (less) "commons/normalize.css";
+@import "commons/mixins";
+@import "commons/fonts";
+@import "commons/icons";
+@import "commons/basic";
+@import "commons/elements";
+@import "commons/popup";
+
+
+// Libraries
+
+
+@import "libraries/fancybox";
+
+
+// Structure
+
+
+@import "structure/general";
+@import "structure/navigation";
+@import "structure/main";
+@import "structure/modal";
+@import "structure/awwwards";
+@import "structure/cookies";
+@import "structure/browserUpdate";
+
+
+// Modules
+
+
+@import "modules/module";
+@import "modules/module--wysiwyg";
+@import "modules/module--treatments";
+@import "modules/module--team";
+@import "modules/module--centers";
+@import "modules/module--quotes";
+@import "modules/module--address";
+@import "modules/module--map";
+@import "modules/module--gallery";

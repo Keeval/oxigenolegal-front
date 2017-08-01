@@ -1,0 +1,208 @@
+//----------------------------------------//
+//                                        //
+//  Stylesheet: Module--Quotes            //
+//                                        //
+//----------------------------------------//
+
+
+.module.module--quotes {
+	
+	position: static;
+	background: @text_link_color;
+	color: #ffffff;
+
+	.module__inner1 {
+		position: static;
+		.module__inner2 {
+			position: relative;
+			box-sizing: content-box;
+			height: 200px;  // Initial value. JS modified.
+			padding: 150px 0 80px 0;
+		}
+	}
+	
+	ul.module--quotes__list {
+		position: static;
+		list-style-type: none;
+		padding: 0;
+		margin: 0 auto;
+		li.module--quotes__list__item {
+			position: static;
+			list-style-type: none;
+			padding: 0;
+			margin: 0;
+			.module--quotes__list__item__author {
+				position: absolute;
+				z-index: 100;
+				top: 60px;
+				left: 0;
+				right: 0;
+				opacity: 0;
+				.transition( ~'opacity 0.3s linear' );
+				p {
+					position: relative;
+					font-family: "Montserrat", sans-serif;
+					font-size: 13/14em;
+					font-weight: 300;
+					font-style: normal;
+					line-height: 1.7em;
+					text-align: center;
+					padding: 0 0 20px 0;
+					margin: 0;
+					.module--quotes__list__item__author__name {
+						font-size: 14/13em;
+						font-weight: 300;
+						font-style: normal;
+						text-transform: uppercase;
+						letter-spacing: 0.05em;
+					}
+					.module--quotes__list__item__author__treatment {
+					}
+				}
+			}
+			.module--quotes__list__item__quote {
+				position: absolute;
+				z-index: 100;
+				top: 150px;
+				left: 0;
+				right: 0;
+				overflow: hidden;
+				width: 60%;
+				padding: 0;
+				margin: 0 auto;
+				font-family: "Cormoran Garamond", serif;
+				font-size: 24/14em;
+				font-weight: 400;
+				font-style: italic;
+				line-height: 36/24em;
+				text-align: center;
+				opacity: 0;
+				quotes: "\201C" "\201D";
+				.transition( ~'opacity 0.3s linear, transform 0.6s ease' );	
+				p:last-child {
+					margin-bottom: 0;
+				}
+				p:first-child:before {
+				    content: open-quote;
+				}
+				p:last-child:after {
+				    content: close-quote;
+				}				
+			}
+			&.current {
+				.module--quotes__list__item__author,
+				.module--quotes__list__item__quote {
+					opacity: 1;
+					.transition( ~'opacity 0.3s linear 0.3s, transform 0.6s ease' );	
+				}
+			}
+			&.onTheLeft {
+				.module--quotes__list__item__quote {
+					.transform( ~'translateX(-200%)' );
+				}
+			}
+			&.onTheRight {
+				.module--quotes__list__item__quote {
+					.transform( ~'translateX(200%)' );
+				}
+			}
+		}
+	}
+
+	ul.module--quotes__pagination {
+		display: none;
+	}
+	
+	.module--quotes__controls {
+		button {
+			display: block;
+			background: none;
+			border: none;
+			width: 3em;
+			height: 3em;
+			padding: 1em;
+			position: absolute;
+			z-index: 200;
+			top: 50%;
+			.transform(~'translateY(-50%)');
+			.icon();
+			font-size: 2em;
+			color: #ffffff;
+			.transition(~'color 0.3s');
+			.usingMouse &:hover {
+				color: @text_hover_color;
+			}
+			&.module--quotes__controls__prev {
+				left: 0;
+				&:after {
+					content: @icon-arrow-left;
+				}
+			}
+			&.module--quotes__controls__next {
+				right: 0;
+				&:after {
+					content: @icon-arrow-right;
+				}
+			}			
+		}
+	}
+	
+}
+
+
+//------------------------------------------------------------
+//------------------------------------------------------------
+
+
+@media (max-width: 800px) {
+
+	.module.module--quotes {
+		
+		ul.module--quotes__list {
+			li.module--quotes__list__item {
+				.module--quotes__list__item__quote {
+					width: 75%;
+				}
+			}
+		}	
+
+		.module--quotes__controls {
+			button {
+				font-size: 1.5em;
+			}
+		}	
+
+	}
+	
+}
+
+
+//------------------------------------------------------------
+//------------------------------------------------------------
+
+
+@media (max-width: 600px) {
+
+	.module.module--quotes {
+		
+		ul.module--quotes__list {
+			li.module--quotes__list__item {
+				.module--quotes__list__item__quote {
+					width: 100%;
+					padding: 0 20px;
+					font-size: 20/14em;
+				}
+			}
+		}	
+
+		.module--quotes__controls {
+			button {
+				font-size: 1.5em;
+				top: auto;
+				bottom: -30px;
+			}
+		}
+		
+	}
+
+}

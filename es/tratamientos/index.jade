@@ -1,0 +1,39 @@
+extends ../../html/layouts/layout_default
+
+block navigation
+	include ../../html/structure/navigation/navigation_treatments
+
+block modal__inner
+	div#modal__inner
+
+		a(href="/front/html/templates/es/")#modal__back
+			span Volver
+
+		div#modal__navigation
+		
+			ul
+				li
+					a(href="#implantologia") Implantología
+				li
+					a(href="#odontologia") Odontología
+				li
+					a(href="#periodoncia") Periodoncia
+				li
+					a(href="#ortodoncia") Ortodoncia
+				li
+					a(href="#odontopediatria") Odontopediatría
+				li
+					a(href="#endodoncia") Endodoncia
+
+		div#modal__content
+			div#modal__content__inner
+
+				div.modal__content__heading
+		
+					H1 Tratamientos
+					div.modal__heading__intro
+						p Tenemos el equipo técnico más avanzado, y te ofrecemos los últimos tratamientos en odontología, implantología, ortodoncia...
+
+				include ../../html/modules/module-treatments/module-treatments
+
+				include ../../html/modules/module-quotes/module-quotes-treatments

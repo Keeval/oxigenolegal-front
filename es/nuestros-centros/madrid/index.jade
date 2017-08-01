@@ -1,0 +1,23 @@
+extends ../../../html/layouts/layout_default
+
+block navigation
+	include ../../../html/structure/navigation/navigation_ourcenters_interior
+
+block modal__inner
+	div#modal__inner
+
+		a(href="/es/nuestros-centros/")#modal__back
+			span Volver
+
+		div#modal__content
+			div#modal__content__inner
+
+				div.modal__content__heading
+		
+					H1 #[span.modal__content__heading__parent Nuestros centros] #[span.modal__content__heading__sep :] Madrid
+					div.modal__heading__intro
+						p En Clínica Dental Escariz te ofrecenmos al mejor equipo humano y técnico en el centro de Madrid, en un completo centro odontológico para cuidar de tu salud dental.
+			
+				include ../../../html/modules/module-gallery/module-gallery-madrid				
+				include ../../../html/modules/module-address/module-address-madrid
+				include ../../../html/modules/module-map/module-map-madrid

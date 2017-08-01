@@ -1,0 +1,27 @@
+extends ../../html/layouts/layout_default
+
+block navigation
+	include ../../html/structure/navigation/navigation_contact
+
+block modal
+	div#modal.modal--contact
+		div#modal__inner
+
+			a(href="/es/")#modal__back
+				span Volver
+
+			div#modal__content
+				div#modal__content__inner
+
+					div.modal__content__heading
+		
+						H1 ¿Hablamos?
+						div.modal__heading__intro
+							p El equipo humano de Clínica Dental Escariz estará encantado de atender tus dudas y consultas en el correo #[a(href="mailto:clinicaescariz@gmail.com") clinicaescariz@gmail.com.] Y por supuesto, puedes solicitar una cita en cualquiera de nuestros centros utilizando ese mismo correo o en los números de teléfono:						
+
+				include ../../html/modules/module-address/module-address-madrid-contacto
+				include ../../html/modules/module-address/module-address-el-alamo-contacto
+
+		div#modal__overlay
+		div#modal__loading
+			div.spinning

@@ -1,0 +1,31 @@
+extends ../../html/layouts/layout_default
+
+block navigation
+	include ../../html/structure/navigation/navigation_ourcenters
+
+block modal__inner
+	div#modal__inner
+
+		a(href="/es/")#modal__back
+			span Volver
+
+		div#modal__navigation
+		
+			ul
+				li
+					a(href="/es/nuestros-centros/madrid/") Centro de Madrid
+				li
+					a(href="/es/nuestros-centros/el-alamo/") Centro de El Álamo
+
+		div#modal__content
+			div#modal__content__inner
+
+				div.modal__content__heading
+		
+					H1 Nuestros centros
+					div.modal__heading__intro
+						p.
+							En la ciudad y en el campo.#[br]
+							Dos modernos centros odontológicos para atenderte en todo momento.
+			
+				include ../../html/modules/module-centers/module-centers

@@ -1,0 +1,402 @@
+//----------------------------------------//
+//                                        //
+//  Navigation stylesheet                 //
+//                                        //
+//----------------------------------------//
+
+
+#navigation {
+	position: absolute;
+	z-index: 200;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	width: @navigation_width;
+	background: #ffffff;
+	overflow-x: hidden;
+	overflow-y: auto;
+	font-size: 16/16em;
+}
+	
+#navigation__inner {
+	min-height: 600px;
+	position: relative;
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+
+#navigation__logo {
+	position: absolute;
+	z-index: 200;
+	left: 40px;
+	top: 40px;
+	display: block;
+	width: 110px;
+	height: 130/95*110px;
+	background-image: url('../gfx/lgo-escariz-ver.svg');
+	background-repeat: no-repeat;
+	background-position: top center;
+	background-size: contain;
+	a {
+		display: block;
+		width: 100%;
+		height: 100%;
+		span {
+			display: none;
+		}
+	}
+}
+
+#navigation__menubutton {
+	display: none;
+}
+
+#navigation__menu {
+	display: block;
+	position: absolute;
+	z-index: 100;
+	top: 50%;
+	.transform(~'translateY(-50%)');
+	width: 100%;
+	padding: 120px 40px 0 40px;
+	font-family: "Montserrat", sans-serif;
+	font-weight: 300;
+	font-size: 14/16em;
+	font-style: normal;
+	text-transform: uppercase;
+	line-height: 1.3em;
+	> ul {
+		list-style-type: none;
+		padding: 0;
+		margin: 0;
+		> li {
+			list-style-type: none;
+			padding: 0;
+			margin: 0 0 1em 0;
+			> a {
+				color: @text_normal_color;
+				display: inline-block;
+				padding: 0.5em;
+				margin: -0.5em;
+				.usingMouse &:hover {
+					color: @text_link_color;
+				}
+			}
+			> ul {
+				display: none;
+			}
+			&:last-child {
+				margin-bottom: 0;
+			}
+			&.current-menu-item,
+			&.current_page_item,
+			&.current-menu-parent,
+			&.current-page-parent,
+			&.current-menu-ancestor,
+			&.current-page-ancestor {
+				> a {
+					color: @text_active_color;
+				}
+			}
+			&.current-menu-item,
+			&.current_page_item {
+				pointer-events: none;				
+			}			
+			&.contact {
+				margin-top: 1em;
+				> a {
+					.button();
+					font-size: 16/16em;
+					line-height: 2em;
+					height: 2em;
+					border-radius: 1em;
+					margin-left: 0;		
+				}
+			}
+		}
+	}
+}
+
+#navigation__languages {
+	position: absolute;
+	z-index: 200;
+	left: 40px;
+	right: 40px;
+	bottom: 40px;
+	font-family: "Montserrat", sans-serif;
+	font-weight: 300;
+	font-size: 14/16em;
+	font-style: normal;
+	text-transform: uppercase;
+	line-height: 1.5em;
+	> ul {
+		list-style-type: none;
+		padding: 0;
+		margin: 0;
+		> li {
+			display: inline;
+			list-style-type: none;
+			padding: 0;
+			margin: 0;
+			&:after {
+				content: "/";
+				margin: 0 0.5em;
+			}
+			> a {
+				color: @text_normal_color;
+				display: inline-block;
+				padding: 0.5em;
+				margin: -0.5em;
+				.usingMouse &:hover {
+					color: @text_link_color;
+				}
+			}
+			> ul {
+				display: none;
+			}
+			&:last-child {
+				&:after {
+					content: none;
+				}
+			}
+			&.current-menu-item {
+				pointer-events: none;
+				> a {
+					color: @text_active_color;
+				}
+			}
+		}
+	}
+}
+
+
+//------------------------------------------------------------
+//------------------------------------------------------------
+
+
+@media (min-width: 2000px) {
+
+	#navigation {
+		font-size: 20/16em;
+		width: 1.5*@navigation_width;
+	}
+	
+	#navigation__inner {
+		min-height: 800px;
+	}
+	
+	#navigation__logo {
+		left: 60px;
+		top: 60px;
+		width: 165px;
+		height: 130/95*165px;
+	}
+
+	#navigation__menu {
+		padding: 180px 60px 0 60px;
+	}
+
+	#navigation__languages {
+		left: 60px;
+		right: 60px;
+		bottom: 60px;
+	}
+
+}
+
+
+//------------------------------------------------------------
+//------------------------------------------------------------
+
+
+@media (max-width: 1300px) {
+
+	#navigation {
+		width: @navigation_width - 20px;
+	}
+	
+	#navigation__inner{
+		min-height: 500px;
+	}
+	
+	#navigation__logo {
+		left: 30px;
+		top: 30px;
+		width: 80px;
+		height: 130/95*80px;
+	}
+
+	#navigation__menu {
+		padding: 50px 30px 0 30px;
+	}
+
+	#navigation__languages {
+		left: 30px;
+		right: 30px;
+		bottom: 30px;
+	}
+
+}
+
+
+//------------------------------------------------------------
+//------------------------------------------------------------
+
+
+@media (max-width: 1000px) {
+
+	#navigation,
+	#navigation__inner {
+		position: static;
+		width: 0;
+		height: 0;
+		min-height: 0;
+		background: none;
+		overflow: visible;
+	}
+	
+	#navigation__top {
+		position: absolute;
+		z-index: 400;
+		top: 0;
+		height: 80px;
+		left: 0;
+		right: 0;
+		background: #ffffff;		
+	}
+	
+	#navigation__top__inner {}
+	
+	#navigation__logo {
+		top: 20px;
+		width: 150px;
+		height: 40px;
+		background-image: url('../gfx/lgo-escariz-hor.svg');
+		
+	}
+
+	#navigation__menubutton {
+		display: block;
+		width: 20px;
+		height: 20px;
+		position: absolute;
+		right: 40px;
+		top: 30px;
+		button#navigation__menubutton__button {
+			.appearance(~'none');
+			display: block;
+			width: 100%;
+			height: 100%;
+			padding: 0;
+			border: none;
+			margin: 0;
+			background: none;
+			vertical-align: middle;
+			text-align: center;
+			span {
+				display: none;
+			}
+			&:before,
+			&:after {
+				.icon();
+				font-size: 20px;
+				vertical-align: middle;
+				.transition(~'transform 0.6s cubic-bezier(.55,0,.1,1), opacity 0.4s linear');
+				position: absolute;
+				top: 0;
+				left: 0;
+			}
+			&:before {
+				content: @icon-menu;
+				.transform(~'translateX(0)');
+				opacity: 1;
+			}
+			&:after {
+				content: @icon-close;
+				.transform(~'translateX(200%)');
+				opacity: 0;
+				pointer-events: none;
+			}
+		}
+	}
+	
+	.navigationVisible #navigation__menubutton {
+		button#navigation__menubutton__button {
+			&:before {
+				content: @icon-menu;
+				.transform(~'translateX(-200%)');
+				opacity: 0;
+				pointer-events: none;				
+			}
+			&:after {
+				content: @icon-close;
+				.transform(~'translateX(0)');
+				opacity: 1;
+			}			
+		}
+	}
+		
+	#navigation__bottom {
+		position: absolute;
+		z-index: 300;
+		top: 80px;
+		bottom: 0;
+		right: 0;
+		left: auto;
+		width: @navigation_width;
+		background: #ffffff;
+		border-top: 1px solid #EEEEEE;
+		overflow-x: hidden;
+		overflow-y: auto;
+		.transform( ~'translateX(100%)' );
+		.transition( ~'transform 0.4s cubic-bezier(.55,0,.1,1)' );
+	}
+
+	.navigationVisible #navigation__bottom {
+		.transform( ~'translateX(0)' );		
+		.transition( ~'transform 0.4s cubic-bezier(.55,0,.1,1)' );
+	}
+	
+	#navigation__bottom__inner {
+		position: relative;
+		display: block;
+		width: 100%;
+		height: 100%;
+		min-height: 400px;
+	}
+	
+	#navigation__menu {
+		padding-top: 0;
+	}
+		
+}
+
+
+//------------------------------------------------------------
+//------------------------------------------------------------
+
+
+@media (max-width: 600px) {
+
+	#navigation__top {
+		height: 60px;
+	}
+
+	#navigation__logo {
+		top: 15px;
+		left: 20px;
+		width: (30/40)*150px;
+		height: 30px;
+	}
+
+	#navigation__menubutton {
+		top: 20px;
+		right: 20px;
+	}
+
+	#navigation__bottom {
+		top: 60px;
+	}
+	
+}

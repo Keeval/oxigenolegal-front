@@ -1,0 +1,23 @@
+extends ../../../html/layouts/layout_default
+
+block navigation
+	include ../../../html/structure/navigation/navigation_ourcenters_interior
+
+block modal__inner
+	div#modal__inner
+
+		a(href="/es/nuestros-centros/")#modal__back
+			span Volver
+
+		div#modal__content
+			div#modal__content__inner
+
+				div.modal__content__heading
+		
+					H1 #[span.modal__content__heading__parent Nuestros centros] #[span.modal__content__heading__sep :] El Álamo
+					div.modal__heading__intro
+						p Clínica Dental Escariz dispone de un moderno centro odontológico completamente equipado en la zona sur de la sierra madrileña, con el mejor equipo humano para cuidar de tu salud dental.
+			
+				include ../../../html/modules/module-gallery/module-gallery-el-alamo				
+				include ../../../html/modules/module-address/module-address-el-alamo
+				include ../../../html/modules/module-map/module-map-el-alamo

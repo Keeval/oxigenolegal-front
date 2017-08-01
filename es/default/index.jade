@@ -1,0 +1,22 @@
+extends ../../html/layouts/layout_default
+
+block navigation
+	include ../../html/structure/navigation/navigation_home
+
+block modal
+	div#modal
+		div#modal__inner
+
+			a(href="/es/")#modal__back
+				span Volver
+
+			div#modal__content
+				div#modal__content__inner
+
+					div.modal__content__heading
+		
+						H1 Plantilla por defecto
+						div.modal__heading__intro
+							p Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula. Curabitur aliquet quam id dui posuere blandit.
+
+					include ../../html/modules/module-wysiwyg/module-wysiwyg-default

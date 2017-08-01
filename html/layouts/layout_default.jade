@@ -1,0 +1,30 @@
+doctype html
+html(lang="es")
+	include ../structure/head
+	body.page-template-default
+		div#general
+			block navigation
+				include ../structure/navigation/navigation_home
+			block main
+				div#main
+					block main__inner
+						div#main__inner
+						div#main__pagination
+					button#main__cts.cts
+					div#main__overlay
+			block modal
+				div#modal
+					block modal__inner
+						div#modal__inner
+					div#modal__overlay
+					div#modal__loading
+						div.spinning
+			block awwwards
+				div#awwwards
+					a(href="https://www.awwwards.com/sites/clinica-dental-escariz" target="_blank")
+						span Awwwards Nominee
+			block cookies
+				include ../structure/cookies
+			div#loading
+				div.spinning
+		include ../structure/foot

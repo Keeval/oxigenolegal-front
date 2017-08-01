@@ -1,0 +1,91 @@
+extends ../../../html/layouts/layout_default
+
+block navigation
+	include ../../../html/structure/navigation/navigation_treatments_interior
+
+block modal__inner
+	div#modal__inner
+
+		a(href="/es/tratamientos/")#modal__back
+			span Volver
+
+		div#modal__content
+			div#modal__content__inner
+
+				div.modal__content__heading
+		
+					h1 #[span.modal__content__heading__parent Tratamientos] #[span.modal__content__heading__sep :] Periodoncia
+					div.modal__heading__intro
+						p Además de la predisposición genética, la presencia de placa bacteriana o biofilm, provocado por una mala higiene, es el factor desencadenante de las enfermedades periodontales: #[strong gingivitis] y #[strong periodontitis].
+
+				div.module.module--wysiwyg
+
+					div.wp-caption
+						img(src="/img/periodoncia-01.jpg" width="632" height="246" alt="Fases de la gingivitis y la periodontitis")
+						p.wp-caption-text Fases de la gingivitis y la periodontitis
+
+					h2 Gingivitis
+					p Inflamación superficial de la encía. El sangrado es su principal señal de alerta. Si no se trata adecuadamente puede derivar en Periodontitis.
+					p La gingivitis es una de las patologías más frecuentes en el ser humano. Es reversible y puede aparecer a cualquier edad.
+				
+					hr
+				
+					h2 Periodontitis
+					p Infección profunda de la encía y del resto de tejidos que sujetan el diente. Puede provocar la pérdida dental. Repercute en la salud general: aumenta el riesgo cardiovascular, la descompensación de la diabetes o el parto prematuro.					
+					p La periodontitis aumenta su frecuencia con la edad, y no es reversible. Es una enfermedad crónica y qu como tal requiere un tratamiento crónico y un mantenimiento exhaustivo tanto por parte del paciente realizando una correcta higiene oral, como por parte del profesional en las visitas de control en las que debe hacer una limpieza superficial o profunda allá donde se requiera.
+					p En la periodontitis la encía se despega del diente creando bolsas que almacenan bacterias, que pueden ir destruyendo los tejidos de sostén del diente (hueso y ligamento periodontal). Enrojecimiento y sangrado son síntomas evidentes. Una encía sana no sangra. El desplazamiento de los dientes (migración), aumentando la separación entre ellos, y la movilidad son síntomas de la enfermedad más avanzada.
+					p El tabaco agrava la evolución de la periodontitis y reduce la eficacia del tratamiento. Los efectos negativos están, además, relacionados con la dosis de tabaco diaria. En pacientes que dejan de fumar, tras unos meses, la encía adquiere unas características que la hacen similar a la de una persona que nunca fumó, por lo que la eliminación del hábito tabáquico favorece la salud periodontal y mejora la eficacia del tratamiento en caso de padecer periodontitis.
+					p Otros factores que pueden agravar el pronóstico de la enfermedad periodontal son la virulencia de las cepas bacterianas de las que son portadores ciertos individuos, así como la presencia de diabetes y enfermedades cardiovasculares.
+
+
+					hr
+						
+					h2 Casos reales
+					
+					h3 Caso 1: Alargamiento coronario
+					
+					div.gallery.gallery-columns-3
+						section.gallery-item
+							div.gallery-icon
+								a(href="/img/periodoncia-caso1-01.png" title="Alargamiento coronario - Antes del tratamiento")
+									img(src="/img/periodoncia-caso1-01.png" width="640" height="336" alt="Alargamiento coronario - Antes del tratamiento")
+							figure.wp-caption-text.gallery-caption Antes del tratamiento.
+						section.gallery-item
+							div.gallery-icon
+								a(href="/img/periodoncia-caso1-02.png" title="Alargamiento coronario - Después del tratamiento")
+									img(src="/img/periodoncia-caso1-02.png" width="640" height="336" alt="Alargamiento coronario - Después del tratamiento")
+							figure.wp-caption-text.gallery-caption Después del tratamiento.
+						br(style="clear: both")
+						br(style="clear: both")
+
+					h3 Caso 2: Injerto de encía
+					
+					div.gallery.gallery-columns-3
+						section.gallery-item
+							div.gallery-icon
+								a(href="/img/periodoncia-caso2-01.png" title="Injerto de demetrio - Antes del tratamiento")
+									img(src="/img/periodoncia-caso2-01.png" width="592" height="592" alt="Injerto de demetrio - Antes del tratamiento")
+							figure.wp-caption-text.gallery-caption Antes del tratamiento.
+						section.gallery-item
+							div.gallery-icon
+								a(href="/img/periodoncia-caso2-02.png" title="Injerto de demetrio - Después del tratamiento")
+									img(src="/img/periodoncia-caso2-02.png" width="592" height="592" alt="Injerto de demetrio - Después del tratamiento")
+							figure.wp-caption-text.gallery-caption Después del tratamiento.
+						br(style="clear: both")
+						br(style="clear: both")
+
+					h3 Caso 3: Recubrimiento de la raiz de un diente antiestética
+					
+					div.gallery.gallery-columns-3
+						section.gallery-item
+							div.gallery-icon
+								a(href="/img/periodoncia-caso3-01.png" title="Recubrimiento de la raiz de un diente antiestética - Antes del tratamiento")
+									img(src="/img/periodoncia-caso3-01.png" width="592" height="530" alt="Recubrimiento de la raiz de un diente antiestética - Antes del tratamiento")
+							figure.wp-caption-text.gallery-caption Antes del tratamiento.
+						section.gallery-item
+							div.gallery-icon
+								a(href="/img/periodoncia-caso3-02.png" title="Recubrimiento de la raiz de un diente antiestética - Después del tratamiento")
+									img(src="/img/periodoncia-caso3-02.png" width="592" height="530" alt="Recubrimiento de la raiz de un diente antiestética - Después del tratamiento")
+							figure.wp-caption-text.gallery-caption Después del tratamiento.
+						br(style="clear: both")
+						br(style="clear: both")

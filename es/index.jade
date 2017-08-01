@@ -1,0 +1,73 @@
+extends ../html/layouts/layout_default
+
+block navigation
+	include ../html/structure/navigation/navigation_home
+	
+block main__inner
+	div#main__inner
+		section.main__section#top
+			div.main__section__text
+				h1.main__section__text__title
+					|Dentistas de vanguardia#[br]
+					|comprometidos con tu salud
+				div.main__section__text__intro
+					p En Clínica Dental Escariz reunimos tecnología de vanguardia y un equipo médico excepcional, porque tu salud dental y tu bienestar son lo primero para nosotros.
+				button.button.button--cts.cts.appear Conócenos
+			div.main__section__background
+				img(src="/img/home-01-XL.jpg" srcset="/img/home-01-XL.jpg 1366w, /img/home-01-L.jpg 1024w, /img/home-01-M.jpg 640w" style="object-position: center center;" alt="Clínica Dental Escariz")
+		section.main__section#tratamientos
+			div.main__section__text
+				h2
+					span.main__section__text__pretitle Tratamientos
+					span.main__section__text__sep :
+					span.main__section__text__title
+						|La última tecnología#[br]
+						|para tu salud
+				div.main__section__text__intro
+					p Tenemos el equipo técnico más avanzado, y te ofrecemos los últimos tratamientos en odontología, implantología, ortodoncia...
+				a(href="/es/tratamientos/").button.button--arrow.appear Conoce nuestros tratamientos
+			div.main__section__background
+				img(src="/img/home-02-XL.jpg" srcset="/img/home-02-XL.jpg 1366w, /img/home-02-L.jpg 1024w, /img/home-02-M.jpg 640w" style="object-position: center center;" alt="Clínica Dental Escariz - Tratamientos")
+		section.main__section#equipo-humano
+			div.main__section__text
+				h2
+					span.main__section__text__pretitle Equipo humano
+					span.main__section__text__sep :
+					span.main__section__text__title
+						|Experiencia y profesionalidad#[br]
+						|con una sonrisa
+				div.main__section__text__intro
+					p No basta con una gran experiencia médica para ser un buen profesional. El factor humano es fundamental.
+				a(href="/es/equipo-humano/").button.button--arrow.appear Conoce a nuestro equipo
+			div.main__section__background
+				img(src="/img/home-03-XL.jpg" srcset="/img/home-03-XL.jpg 1366w, /img/home-03-L.jpg 1024w, /img/home-03-M.jpg 640w" style="object-position: top left;" alt="Clínica Dental Escariz - Equipo humano")
+		section.main__section#nuestros-centros
+			div.main__section__text
+				h2
+					span.main__section__text__pretitle Nuestros centros
+					span.main__section__text__sep :
+					span.main__section__text__title
+						|En la ciudad#[br]
+						|y en el campo
+				div.main__section__text__intro
+					p
+						|Dos modernos centros odontológicos #[br]
+						|para atenderte en todo momento.
+				a(href="/es/nuestros-centros/madrid").button.button--arrow.button--lefthalf.appear Madrid
+				a(href="/es/nuestros-centros/el-alamo").button.button--arrow.button--righthalf.appear El Álamo
+			div.main__section__background
+				img(src="/img/home-04-XL.jpg" srcset="/img/home-04-XL.jpg 1366w, /img/home-04-L.jpg 1024w, /img/home-04-M.jpg 640w" style="object-position: center center;" alt="Clínica Dental Escariz - Nuestros centros")
+	div#main__pagination
+		ul
+			li
+				a(href="#top")
+					span 1
+			li
+				a(href="#tratamientos")
+					span 2
+			li
+				a(href="#equipo-humano")
+					span 3
+			li
+				a(href="#nuestros-centros")
+					span 4

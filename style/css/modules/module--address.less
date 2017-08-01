@@ -1,0 +1,128 @@
+//----------------------------------------//
+//                                        //
+//  Stylesheet: Module--Address           //
+//                                        //
+//----------------------------------------//
+
+
+.module.module--address {
+	
+	background: @text_link_color;
+	color: #ffffff;
+	a {
+		color: #ffffff;
+		&, &:active, &:visited { color: #ffffff; }
+		.usingMouse &:hover { color: @text_hover_color; text-decoration:none; }
+	}
+	
+	.module--address__text {
+		
+		max-width: 50em;
+		padding: 40px;
+		.clearfix();
+	
+		.module--address__text__address {
+			width: 50%;
+			float: left;
+			font-size: 16/14em;
+			p {
+				margin: 0;
+			}
+		}
+
+		.module--address__text__phone {
+			width: 50%;
+			float: left;
+			font-family: "Georgia", serif;
+			font-size: 36/14em;
+			font-style: italic;
+			text-align: right;
+			padding-left: 20px;
+			p {
+				margin: 0.2em 0 0 0;
+			}
+		}
+		
+	}
+	
+	.modal--contact & {
+		// background: @text_hover_color;
+		background: rgba(255,255,255,0.5);
+		color: @text_hover_color;
+		margin-bottom: 20px;
+	}
+	
+}
+
+
+//------------------------------------------------------------
+//------------------------------------------------------------
+
+
+@media (max-width: 1300px) {
+	
+	.module.module--address {
+		
+		.module--address__text {
+			padding: 30px;
+			.module--address__text__phone {
+				font-size: 30/14em;
+			}
+		}
+		
+	}
+
+}
+
+
+//------------------------------------------------------------
+//------------------------------------------------------------
+
+
+@media (max-width: 800px) {
+	
+	.module.module--address {
+		
+		.module--address__text {
+			
+			.module--address__text__address,
+			.module--address__text__phone {
+				width: auto;
+				float: none;
+				padding: 0;
+			}
+			
+			.module--address__text__phone {
+				padding-top: 20px;
+			}
+			
+		}
+		
+	}
+	
+}
+
+
+//------------------------------------------------------------
+//------------------------------------------------------------
+
+
+@media (max-width: 600px) {
+	
+	.module.module--address {
+			
+		.modal--contact & {
+			margin-left: 20px;
+			margin-right: 20px;
+		}
+		
+		.module--address__text {
+		
+			padding: 20px;
+			
+		}
+		
+	}
+	
+}
+

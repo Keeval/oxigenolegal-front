@@ -1,0 +1,1 @@
+define(["jquery"],function(){return{init:function(){var i,n;$(window).on("resize",function(){i=window.innerWidth?window.innerWidth:$(window).width(),n=window.innerHeight?window.innerHeight:$(window).height(),$(".module--centers").each(function(){$(this).css({height:n-$(this).offset().top})})})}}});
