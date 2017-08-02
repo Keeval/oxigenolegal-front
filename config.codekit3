@@ -511,7 +511,7 @@
 		},
 	"\/icon\/apple-touch-icon-114x114.png": {
 		"ft": 32768,
-		"iS": 7276,
+		"iS": 7812,
 		"oA": 0,
 		"oAP": "\/icon\/apple-touch-icon-114x114.png",
 		"oF": 0,
@@ -522,7 +522,7 @@
 		},
 	"\/icon\/apple-touch-icon-120x120.png": {
 		"ft": 32768,
-		"iS": 6651,
+		"iS": 7548,
 		"oA": 0,
 		"oAP": "\/icon\/apple-touch-icon-120x120.png",
 		"oF": 0,
@@ -533,7 +533,7 @@
 		},
 	"\/icon\/apple-touch-icon-144x144.png": {
 		"ft": 32768,
-		"iS": 6617,
+		"iS": 7840,
 		"oA": 0,
 		"oAP": "\/icon\/apple-touch-icon-144x144.png",
 		"oF": 0,
@@ -544,7 +544,7 @@
 		},
 	"\/icon\/apple-touch-icon-152x152.png": {
 		"ft": 32768,
-		"iS": 10358,
+		"iS": 11371,
 		"oA": 0,
 		"oAP": "\/icon\/apple-touch-icon-152x152.png",
 		"oF": 0,
@@ -555,7 +555,7 @@
 		},
 	"\/icon\/apple-touch-icon-180x180.png": {
 		"ft": 32768,
-		"iS": 15787,
+		"iS": 16717,
 		"oA": 0,
 		"oAP": "\/icon\/apple-touch-icon-180x180.png",
 		"oF": 0,
@@ -566,7 +566,7 @@
 		},
 	"\/icon\/apple-touch-icon-57x57.png": {
 		"ft": 32768,
-		"iS": 2334,
+		"iS": 2708,
 		"oA": 0,
 		"oAP": "\/icon\/apple-touch-icon-57x57.png",
 		"oF": 0,
@@ -577,7 +577,7 @@
 		},
 	"\/icon\/apple-touch-icon-72x72.png": {
 		"ft": 32768,
-		"iS": 2842,
+		"iS": 3451,
 		"oA": 0,
 		"oAP": "\/icon\/apple-touch-icon-72x72.png",
 		"oF": 0,
@@ -588,7 +588,7 @@
 		},
 	"\/icon\/apple-touch-icon-76x76.png": {
 		"ft": 32768,
-		"iS": 3576,
+		"iS": 3994,
 		"oA": 0,
 		"oAP": "\/icon\/apple-touch-icon-76x76.png",
 		"oF": 0,
@@ -599,7 +599,7 @@
 		},
 	"\/icon\/apple-touch-icon.png": {
 		"ft": 32768,
-		"iS": 2334,
+		"iS": 2708,
 		"oA": 0,
 		"oAP": "\/icon\/apple-touch-icon.png",
 		"oF": 0,
@@ -2400,32 +2400,32 @@
 		"plM": 3758088159,
 		"prP": 0
 		},
-	"\/style\/icons\/Escariz\/Escariz.svg": {
+	"\/style\/icons\/Oxigeno-Legal\/Oxigeno-Legal.svg": {
 		"ft": 2097152,
 		"miP": 0,
 		"oA": 2,
-		"oAP": "\/style\/icons\/Escariz\/Escariz.svg",
+		"oAP": "\/style\/icons\/Oxigeno-Legal\/Oxigeno-Legal.svg",
 		"oF": 0,
 		"opt": 0,
 		"plM": 3758088159,
 		"prP": 0
 		},
-	"\/style\/icons\/Escariz\/Escariz.ttf": {
+	"\/style\/icons\/Oxigeno-Legal\/Oxigeno-Legal.ttf": {
 		"ft": 8192,
 		"oA": 2,
-		"oAP": "\/style\/icons\/Escariz\/Escariz.ttf",
+		"oAP": "\/style\/icons\/Oxigeno-Legal\/Oxigeno-Legal.ttf",
 		"oF": 0
 		},
-	"\/style\/icons\/Escariz\/Escariz.woff": {
+	"\/style\/icons\/Oxigeno-Legal\/Oxigeno-Legal.woff": {
 		"ft": 8192,
 		"oA": 2,
-		"oAP": "\/style\/icons\/Escariz\/Escariz.woff",
+		"oAP": "\/style\/icons\/Oxigeno-Legal\/Oxigeno-Legal.woff",
 		"oF": 0
 		},
-	"\/style\/icons\/Escariz\/selection.json": {
+	"\/style\/icons\/Oxigeno-Legal\/selection.json": {
 		"ft": 524288,
 		"oA": 1,
-		"oAP": "\/style\/icons\/Escariz\/selection-min.json",
+		"oAP": "\/style\/icons\/Oxigeno-Legal\/selection-min.json",
 		"oF": 0,
 		"oO": 0,
 		"oS": 1

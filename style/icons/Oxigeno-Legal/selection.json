@@ -597,7 +597,7 @@
   ],
   "height": 1024,
   "metadata": {
-    "name": "Escariz",
+    "name": "Oxigeno-Legal",
     "designer": "Muskae"
   },
   "preferences": {
@@ -609,7 +609,7 @@
     "fontPref": {
       "prefix": "icon-",
       "metadata": {
-        "fontFamily": "Escariz",
+        "fontFamily": "Oxigeno-Legal",
         "majorVersion": 1,
         "minorVersion": 0,
         "designer": "Muskae",
