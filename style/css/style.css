@@ -455,7 +455,7 @@ body {
   -o-font-variant-ligatures: common-ligatures;
   font-variant-ligatures: common-ligatures;
   color: #909090;
-  font-weight: 300;
+  font-weight: 400;
   font-style: normal;
   letter-spacing: normal;
   line-height: 1.7em;
@@ -636,8 +636,8 @@ pre {
 }
 blockquote {
   position: relative;
-  font-family: "Georgia", sans-serif;
-  font-weight: 200;
+  font-family: "Manuale", serif;
+  font-weight: 400;
   font-size: 1.25em;
   font-style: italic;
   line-height: 1.5em;
@@ -661,7 +661,7 @@ blockquote cite {
   display: block;
   text-align: right;
   font-family: 'Titillium Web', sans-serif;
-  font-weight: 300;
+  font-weight: 400;
   font-style: normal;
   font-size: 0.7em;
   line-height: 1.5em;
@@ -679,7 +679,7 @@ h4,
 h5,
 h6 {
   font-family: 'Titillium Web', sans-serif;
-  font-weight: 300;
+  font-weight: 400;
   line-height: 1.2em;
   text-transform: uppercase;
   letter-spacing: 0;
@@ -1039,7 +1039,8 @@ img.aligncenter {
 .wp-caption .wp-caption-dd {
   margin: 1em 0 0 0;
   padding: 0;
-  font-family: "Georgia", serif;
+  font-family: "Manuale", serif;
+  font-weight: 400;
   font-size: 0.9375em;
   font-style: italic;
   line-height: 1.8em;
@@ -1137,7 +1138,8 @@ img.aligncenter {
   display: block!important;
   margin: 0.5em 5px 0 0!important;
   padding: 0!important;
-  font-family: "Georgia", serif;
+  font-family: "Manuale", serif;
+  font-weight: 400;
   font-size: 0.9375em;
   font-style: italic;
   line-height: 1.4em;
@@ -3932,6 +3934,7 @@ body .buorg #buorgig {
   transition-delay: 0.4s;
   margin: 1em 0 0 0;
   font-family: 'PT Serif', serif;
+  font-weight: 400;
   font-style: italic;
   font-size: 1.28571429em;
   line-height: 1.5em;
@@ -4227,7 +4230,8 @@ body .buorg #buorgig {
 .module.module--address .module--address__text .module--address__text__phone {
   width: 50%;
   float: left;
-  font-family: "Georgia", serif;
+  font-family: "Manuale", serif;
+  font-weight: 400;
   font-size: 2.57142857em;
   font-style: italic;
   text-align: right;
