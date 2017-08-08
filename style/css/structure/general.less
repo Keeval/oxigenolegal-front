@@ -44,6 +44,7 @@ body {
 		left: 50%;
 		.transform(~'translateX(-50%) translateY(-50%)');
 		display: block;
+		box-sizing: border-box;
 		width: 48px;
 		height: 48px;
 		&:before {
@@ -59,10 +60,10 @@ body {
 			height: 46px;
 			margin: 1px;
 			text-align: center;
-			border-top: 8px solid @text_link_color;
-			border-right: 8px solid @text_link_color;
-			border-bottom: 8px solid @text_link_color;
-			border-left: 8px solid transparent;
+			border-top: 2px solid @text_link_color;
+			border-right: 2px solid @text_link_color;
+			border-bottom: 2px solid @text_link_color;
+			border-left: 2px solid transparent;
 			border-radius: 50%;
 		    -webkit-animation: spin 10s infinite linear;
 		    -moz-animation: spin 10s infinite linear;

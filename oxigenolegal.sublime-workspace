@@ -1,0 +1,195 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/kikevaldenebro/Web/oxigenolegal-front",
+		"/Users/kikevaldenebro/Web/oxigenolegal-front/style",
+		"/Users/kikevaldenebro/Web/oxigenolegal-front/style/css",
+		"/Users/kikevaldenebro/Web/oxigenolegal-front/style/css/structure",
+		"/Users/kikevaldenebro/Web/oxigenolegal-front/style/fonts"
+	],
+	"file_history":
+	[
+		"/Users/kikevaldenebro/Web/oxigenolegal-front/style/css/commons/fonts.less",
+		"/Users/kikevaldenebro/Web/oxigenolegal-front/style/css/structure/main.less",
+		"/Users/kikevaldenebro/Web/oxigenolegal-front/style/css/modules/module--quotes.less",
+		"/Users/kikevaldenebro/Web/oxigenolegal-front/style/css/modules/module--centers.less",
+		"/Users/kikevaldenebro/Web/oxigenolegal-front/style/css/structure/modal.less",
+		"/Users/kikevaldenebro/Web/oxigenolegal-front/style/css/style.css",
+		"/Users/kikevaldenebro/Web/oxigenolegal-front/style/css/commons/basic.less",
+		"/Users/kikevaldenebro/Web/oxigenolegal-front/style/css/structure/cookies.less",
+		"/Users/kikevaldenebro/Web/oxigenolegal-front/style/css/structure/navigation.less",
+		"/Users/kikevaldenebro/Web/oxigenolegal-front/style/css/style.less",
+		"/Users/kikevaldenebro/Web/oxigenolegal-front/style/css/structure/general.less",
+		"/Users/kikevaldenebro/Web/oxigenolegal-front/style/css/commons/normalize.css"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 93.0,
+		"where_history":
+		[
+			"/Users/kikevaldenebro/Web/oxigenolegal-front/style",
+			"/Users/kikevaldenebro/Web/oxigenolegal-front/style/css"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"\"Cormoran Garamond\", serif;",
+			"\"Cormorant Garamond\", serif;",
+			"'Cormorant Garamond', serif;",
+			"@font_family_1",
+			"\"Montserrat\", sans-serif;",
+			"'Montserrat', sans-serif;"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"@font_family_2;",
+			"@font_family_1;",
+			"@font_family_1"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "oxigenolegal.sublime-project",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 214.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

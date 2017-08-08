@@ -4,7 +4,7 @@
  * 2. Prevent iOS text size adjust after orientation change, without disabling
  *    user zoom.
  */
-@import url('https://fonts.googleapis.com/css?family=Cormorant+Garamond:400,400i');
+@import url('https://fonts.googleapis.com/css?family=PT+Serif:400,400i|Titillium+Web');
 html {
   font-family: sans-serif;
   /* 1 */
@@ -362,12 +362,6 @@ th {
   box-sizing: border-box;
 }
 @font-face {
-  font-family: 'Montserrat';
-  src: url('../fonts/montserrat/montserrat-light-webfont.woff2') format('woff2'), url('../fonts/montserrat/montserrat-light-webfont.woff') format('woff');
-  font-weight: 300;
-  font-style: normal;
-}
-@font-face {
   font-family: 'Escariz';
   src: url('../icons/Oxigeno-Legal/Oxigeno-Legal.ttf?tolqeb') format('truetype'), url('../icons/Oxigeno-Legal/Oxigeno-Legal.woff?tolqeb') format('woff'), url('../icons/Oxigeno-Legal/Oxigeno-Legal.svg?tolqeb#Oxigeno-Legal') format('svg');
   font-weight: normal;
@@ -447,7 +441,7 @@ th {
   content: "\e901";
 }
 body {
-  font-family: "Montserrat", serif;
+  font-family: 'Titillium Web', sans-serif;
   font-size: 100%;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -460,7 +454,7 @@ body {
   -moz-font-variant-ligatures: common-ligatures;
   -o-font-variant-ligatures: common-ligatures;
   font-variant-ligatures: common-ligatures;
-  color: #AFAFAF;
+  color: #909090;
   font-weight: 300;
   font-style: normal;
   letter-spacing: normal;
@@ -512,11 +506,11 @@ a.a--arrow:after {
 }
 ::-moz-selection {
   background: rgba(134, 164, 105, 0.5);
-  color: #A6CB83;
+  color: #86A469;
 }
 ::selection {
   background: rgba(134, 164, 105, 0.5);
-  color: #A6CB83;
+  color: #86A469;
 }
 :focus {
   outline: none;
@@ -666,7 +660,7 @@ blockquote:before {
 blockquote cite {
   display: block;
   text-align: right;
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Titillium Web', sans-serif;
   font-weight: 300;
   font-style: normal;
   font-size: 0.7em;
@@ -684,7 +678,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Titillium Web', sans-serif;
   font-weight: 300;
   line-height: 1.2em;
   text-transform: uppercase;
@@ -723,7 +717,7 @@ h6 {
 button.button,
 a.button,
 input.button {
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Titillium Web', sans-serif;
   font-weight: 400;
   font-style: normal;
   font-size: 1.0625em;
@@ -1283,7 +1277,7 @@ input[type=date]::-webkit-clear-button {
 }
 .form label span.form-control-label,
 .form label .wpcf7-list-item-label {
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Titillium Web', sans-serif;
   font-weight: 200;
   font-style: normal;
   font-size: 0.9em;
@@ -1314,7 +1308,7 @@ input[type=date]::-webkit-clear-button {
   height: 0;
   border-style: solid;
   border-width: 12px 8px 0 8px;
-  border-color: #AFAFAF transparent transparent transparent;
+  border-color: #909090 transparent transparent transparent;
   border-style: inset;
   opacity: 0.8;
   pointer-events: none;
@@ -1364,7 +1358,7 @@ input[type=date]::-webkit-clear-button {
   border-radius: 0;
   margin: 0;
   background: none;
-  color: #AFAFAF;
+  color: #909090;
   font-size: 1.2em;
   font-weight: 500;
   font-style: normal;
@@ -1413,7 +1407,7 @@ input[type=date]::-webkit-clear-button {
 .form input[type=tel]:focus::-ms-value,
 .form textarea:focus::-ms-value,
 .form select:focus::-ms-value {
-  color: #AFAFAF;
+  color: #909090;
   background: none;
 }
 .form input[type=text]::-moz-focus-inner,
@@ -1465,8 +1459,8 @@ input[type=date]::-webkit-clear-button {
   display: block;
   width: 10px;
   height: 25px;
-  border-right: 2px solid #AFAFAF;
-  border-bottom: 2px solid #AFAFAF;
+  border-right: 2px solid #909090;
+  border-bottom: 2px solid #909090;
   -webkit-transform: rotateZ(45deg);
   -moz-transform: rotateZ(45deg);
   -o-transform: rotateZ(45deg);
@@ -1493,7 +1487,7 @@ input[type=date]::-webkit-clear-button {
   width: 16px;
   height: 16px;
   border-radius: 50%;
-  background: #AFAFAF;
+  background: #909090;
 }
 .form input[type=file] {
   visibility: hidden;
@@ -1875,6 +1869,7 @@ body {
   -o-transform: translateX(-50%) translateY(-50%);
   transform: translateX(-50%) translateY(-50%);
   display: block;
+  box-sizing: border-box;
   width: 48px;
   height: 48px;
 }
@@ -1891,10 +1886,10 @@ body {
   height: 46px;
   margin: 1px;
   text-align: center;
-  border-top: 8px solid #86A469;
-  border-right: 8px solid #86A469;
-  border-bottom: 8px solid #86A469;
-  border-left: 8px solid transparent;
+  border-top: 2px solid #86A469;
+  border-right: 2px solid #86A469;
+  border-bottom: 2px solid #86A469;
+  border-left: 2px solid transparent;
   border-radius: 50%;
   -webkit-animation: spin 10s infinite linear;
   -moz-animation: spin 10s infinite linear;
@@ -2049,7 +2044,7 @@ body {
   transform: translateY(-50%);
   width: 100%;
   padding: 120px 40px 0 40px;
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Titillium Web', sans-serif;
   font-weight: 300;
   font-size: 0.875em;
   font-style: normal;
@@ -2067,7 +2062,7 @@ body {
   margin: 0 0 1em 0;
 }
 #navigation__menu > ul > li > a {
-  color: #AFAFAF;
+  color: #909090;
   display: inline-block;
   padding: 0.5em;
   margin: -0.5em;
@@ -2097,7 +2092,7 @@ body {
   margin-top: 1em;
 }
 #navigation__menu > ul > li.contact > a {
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Titillium Web', sans-serif;
   font-weight: 400;
   font-style: normal;
   font-size: 1.0625em;
@@ -2311,7 +2306,7 @@ body {
   left: 40px;
   right: 40px;
   bottom: 40px;
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Titillium Web', sans-serif;
   font-weight: 300;
   font-size: 0.875em;
   font-style: normal;
@@ -2334,7 +2329,7 @@ body {
   margin: 0 0.5em;
 }
 #navigation__languages > ul > li > a {
-  color: #AFAFAF;
+  color: #909090;
   display: inline-block;
   padding: 0.5em;
   margin: -0.5em;
@@ -2619,7 +2614,7 @@ body {
 }
 .main__section .main__section__text .main__section__text__pretitle {
   display: block;
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Titillium Web', sans-serif;
   font-weight: 300;
   font-size: 1.375em;
   font-style: normal;
@@ -2634,7 +2629,7 @@ body {
 }
 .main__section .main__section__text .main__section__text__title {
   display: block;
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Titillium Web', sans-serif;
   font-weight: 300;
   font-size: 2.375em;
   font-style: normal;
@@ -2648,7 +2643,7 @@ body {
   font-size: 2.5em;
 }
 .main__section .main__section__text .main__section__text__intro {
-  font-family: "Cormoran Garamond", serif;
+  font-family: 'PT Serif', serif;
   font-weight: 300;
   font-size: 1.3125em;
   font-style: italic;
@@ -2790,7 +2785,7 @@ button#main__cts {
   padding: 0;
   border: none;
   margin: 0;
-  color: #AFAFAF;
+  color: #909090;
   background: none;
   font-size: 38px;
   line-height: 1em;
@@ -3135,7 +3130,7 @@ a#modal__back:after {
   -moz-transform: translateY(-50%);
   -o-transform: translateY(-50%);
   transform: translateY(-50%);
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Titillium Web', sans-serif;
   font-weight: 300;
   font-size: 0.875em;
   font-style: normal;
@@ -3202,7 +3197,7 @@ a#modal__back:after {
   display: none;
 }
 #modal__content .modal__content__heading .modal__heading__intro {
-  font-family: "Cormoran Garamond", serif;
+  font-family: 'PT Serif', serif;
   font-style: italic;
   font-size: 1.42857143em;
   line-height: 1.5em;
@@ -3277,10 +3272,10 @@ a#modal__back:after {
   height: 46px;
   margin: 1px;
   text-align: center;
-  border-top: 8px solid #86A469;
-  border-right: 8px solid #86A469;
-  border-bottom: 8px solid #86A469;
-  border-left: 8px solid transparent;
+  border-top: 2px solid #86A469;
+  border-right: 2px solid #86A469;
+  border-bottom: 2px solid #86A469;
+  border-left: 2px solid transparent;
   border-radius: 50%;
   -webkit-animation: spin 10s infinite linear;
   -moz-animation: spin 10s infinite linear;
@@ -3480,7 +3475,7 @@ a#modal__back:after {
   -moz-transition: transform 0.6s cubic-bezier(.55,0,.1,1);
   -o-transition: transform 0.6s cubic-bezier(.55,0,.1,1);
   transition: transform 0.6s cubic-bezier(.55,0,.1,1);
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Titillium Web', sans-serif;
   font-size: 0.75em;
   line-height: 1.5em;
 }
@@ -3566,7 +3561,7 @@ body .buorg {
   font-weight: 400;
   font-size: 0.9375em;
   line-height: 1.5em;
-  color: #AFAFAF;
+  color: #909090;
 }
 body .buorg > div {
   position: absolute;
@@ -3936,7 +3931,7 @@ body .buorg #buorgig {
   -o-transition-delay: 0.4s;
   transition-delay: 0.4s;
   margin: 1em 0 0 0;
-  font-family: "Cormoran Garamond", serif;
+  font-family: 'PT Serif', serif;
   font-style: italic;
   font-size: 1.28571429em;
   line-height: 1.5em;
@@ -4058,7 +4053,7 @@ body .buorg #buorgig {
 }
 .module.module--quotes ul.module--quotes__list li.module--quotes__list__item .module--quotes__list__item__author p {
   position: relative;
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Titillium Web', sans-serif;
   font-size: 0.92857143em;
   font-weight: 300;
   font-style: normal;
@@ -4084,7 +4079,7 @@ body .buorg #buorgig {
   width: 60%;
   padding: 0;
   margin: 0 auto;
-  font-family: "Cormoran Garamond", serif;
+  font-family: 'PT Serif', serif;
   font-size: 1.71428571em;
   font-weight: 400;
   font-style: italic;

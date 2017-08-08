@@ -1574,6 +1574,46 @@
 		"opt": 0,
 		"q": 100
 		},
+	"\/img\/home-05-L.jpg": {
+		"ft": 16384,
+		"iS": 77094,
+		"oA": 0,
+		"oAP": "\/img\/home-05-L.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"\/img\/home-05-M.jpg": {
+		"ft": 16384,
+		"iS": 39704,
+		"oA": 0,
+		"oAP": "\/img\/home-05-M.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"\/img\/home-05-XL.jpg": {
+		"ft": 16384,
+		"iS": 124275,
+		"oA": 0,
+		"oAP": "\/img\/home-05-XL.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"\/img\/home-05.jpg": {
+		"ft": 16384,
+		"iS": 9037066,
+		"oA": 0,
+		"oAP": "\/img\/home-05.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
 	"\/img\/IMG_0011_b.jpg": {
 		"ft": 16384,
 		"iS": 257285,
@@ -1933,6 +1973,18 @@
 		"oF": 0,
 		"sC": 1,
 		"tS": 0
+		},
+	"\/oxigenolegal.sublime-project": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/oxigenolegal.sublime-project",
+		"oF": 0
+		},
+	"\/oxigenolegal.sublime-workspace": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/oxigenolegal.sublime-workspace",
+		"oF": 0
 		},
 	"\/style\/css\/commons\/basic.less": {
 		"aP": 0,
@@ -2377,18 +2429,6 @@
 		"sI": 0,
 		"sM": 0,
 		"sU": 0
-		},
-	"\/style\/fonts\/montserrat\/montserrat-light-webfont.woff": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/style\/fonts\/montserrat\/montserrat-light-webfont.woff",
-		"oF": 0
-		},
-	"\/style\/fonts\/montserrat\/montserrat-light-webfont.woff2": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/style\/fonts\/montserrat\/montserrat-light-webfont.woff2",
-		"oF": 0
 		},
 	"\/style\/gfx\/lgo-oxigenolegal.svg": {
 		"ft": 2097152,
