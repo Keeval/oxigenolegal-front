@@ -3052,28 +3052,28 @@ button#main__cts:before {
   color: #ffffff;
 }
 .modal--contact #modal__inner a {
-  color: #A6CB83;
+  color: rgba(255, 255, 255, 0.5);
 }
 .modal--contact #modal__inner a,
 .modal--contact #modal__inner a:active,
 .modal--contact #modal__inner a:visited {
-  color: #A6CB83;
+  color: rgba(255, 255, 255, 0.5);
 }
 .usingMouse .modal--contact #modal__inner a:hover {
-  color: #236976;
+  color: #ffffff;
   text-decoration: none;
 }
 .modal--contact #modal__inner button.button,
 .modal--contact #modal__inner a.button,
 .modal--contact #modal__inner input.button {
-  background: #A6CB83;
+  background: rgba(255, 255, 255, 0.3);
   color: #ffffff;
 }
 .usingMouse .modal--contact #modal__inner button.button:hover,
 .usingMouse .modal--contact #modal__inner a.button:hover,
 .usingMouse .modal--contact #modal__inner input.button:hover {
-  background: rgba(255, 255, 255, 0.7);
-  color: #A6CB83;
+  background: #ffffff;
+  color: #86A469;
 }
 .usingMouse .modal--contact #modal__inner button.button:hover:before,
 .usingMouse .modal--contact #modal__inner a.button:hover:before,
@@ -4240,10 +4240,22 @@ body .buorg #buorgig {
 .module.module--address .module--address__text .module--address__text__phone p {
   margin: 0.2em 0 0 0;
 }
-.modal--contact .module.module--address {
-  background: rgba(255, 255, 255, 0.5);
-  color: #A6CB83;
+.modal--contact #modal__inner .module.module--address {
+  background: rgba(255, 255, 255, 0.65);
+  color: #86A469;
   margin-bottom: 20px;
+}
+.modal--contact #modal__inner .module.module--address a {
+  color: #86A469;
+}
+.modal--contact #modal__inner .module.module--address a,
+.modal--contact #modal__inner .module.module--address a:active,
+.modal--contact #modal__inner .module.module--address a:visited {
+  color: #86A469;
+}
+.usingMouse .modal--contact #modal__inner .module.module--address a:hover {
+  color: #ffffff;
+  text-decoration: none;
 }
 @media (max-width: 1300px) {
   .module.module--address .module--address__text {

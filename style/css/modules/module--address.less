@@ -46,10 +46,14 @@
 		
 	}
 	
-	.modal--contact & {
-		// background: @text_hover_color;
-		background: rgba(255,255,255,0.5);
-		color: @text_hover_color;
+	.modal--contact #modal__inner & {
+		background: rgba(255,255,255,0.65);
+		color: @text_link_color;
+		a {
+			color: @text_link_color;
+			&, &:active, &:visited { color: @text_link_color; }
+			.usingMouse &:hover { color: #ffffff; text-decoration:none; }
+		}
 		margin-bottom: 20px;
 	}
 	

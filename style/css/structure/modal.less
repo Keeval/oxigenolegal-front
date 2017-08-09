@@ -37,18 +37,18 @@
 			color: #ffffff;
 		}
 		a {
-			color: @text_hover_color;
-			&, &:active, &:visited { color: @text_hover_color; }
-			.usingMouse &:hover { color: #236976; text-decoration:none; }
+			color: fade(#ffffff,50%);
+			&, &:active, &:visited { color: fade(#ffffff,50%); }
+			.usingMouse &:hover { color: fade(#ffffff,100%); text-decoration:none; }
 		}
 		button.button,
 		a.button,
 		input.button {
-			background: @text_hover_color;
+			background: fade(#ffffff,30%);
 			color: #ffffff;
 			.usingMouse &:hover {
-				background: fadeout(#ffffff, 30%);
-				color: @text_hover_color;
+				background: fade(#ffffff, 100%);
+				color: @text_link_color;
 				&:before {
 					width: 100%;
 				}
